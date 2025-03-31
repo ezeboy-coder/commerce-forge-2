@@ -39,8 +39,8 @@ export default function GoogleAnalyticsBlogPost() {
       </div>
 
       <div className="container mx-auto px-6 py-16">
-        <div className="grid grid-cols-4 gap-8">
-          <div className="col-span-3">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div className="lg:col-span-3">
             <motion.article
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

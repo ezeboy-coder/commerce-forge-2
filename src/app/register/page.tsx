@@ -26,7 +26,7 @@ export default function RegisterPage() {
   return (
     <div className="min-h-screen flex">
       {/* Left side - Registration Form */}
-      <div className="w-7/12 bg-white py-12 px-24">
+      <div className="w-full lg:w-7/12 bg-white py-12 px-6 lg:px-24">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -223,7 +223,7 @@ export default function RegisterPage() {
       </div>
 
       {/* Right side - Image and Benefits */}
-      <div className="w-5/12 relative bg-blue-600">
+      <div className="hidden lg:block w-5/12 relative bg-blue-600">
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"

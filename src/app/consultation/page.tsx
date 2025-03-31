@@ -25,7 +25,7 @@ export default function ConsultationPage() {
   return (
     <div className="min-h-screen flex">
       {/* Left side - Form */}
-      <div className="w-1/2 bg-white py-20 px-16">
+      <div className="w-full lg:w-1/2 bg-white py-12 lg:py-20 px-6 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -142,7 +142,7 @@ export default function ConsultationPage() {
       </div>
 
       {/* Right side - Image and Info */}
-      <div className="w-1/2 relative bg-blue-600">
+      <div className="hidden lg:block w-1/2 relative bg-blue-600">
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80"

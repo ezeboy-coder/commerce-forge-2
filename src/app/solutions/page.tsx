@@ -52,7 +52,7 @@ export default function SolutionsPage() {
 
       <section className="py-20">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {solutions.map((solution, index) => (
               <motion.div
                 key={solution.title}
@@ -65,7 +65,9 @@ export default function SolutionsPage() {
                 <h3 className="text-2xl font-semibold mb-3">{solution.title}</h3>
                 <p className="text-gray-600 mb-6">{solution.description}</p>
                 <Link
-                  href="/contact"
+                  href={solution.title === "Team Management" || solution.title === "Process Automation" 
+                    ? `/solutions/${solution.title.toLowerCase().replace(/\s+/g, '-')}` 
+                    : `/solutions/${solution.title.toLowerCase().split(' ')[0]}`}
                   className="text-blue-600 font-semibold inline-flex items-center hover:text-blue-700"
                 >
                   Learn more <ArrowRight className="ml-2 h-4 w-4" />

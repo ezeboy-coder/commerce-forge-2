@@ -16,7 +16,7 @@ export default function Navbar() {
             EnterpriseHub
           </Link>
 
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden lg:flex space-x-8">
             <Link
               href="/solutions"
               className="text-gray-600 hover:text-blue-600 transition-colors"
@@ -49,7 +49,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
             <Link
               href="/login"
               className="text-gray-600 hover:text-blue-600 transition-colors"
@@ -65,7 +65,7 @@ export default function Navbar() {
           </div>
 
           <button
-            className="md:hidden"
+            className="lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             <Menu className="h-6 w-6 text-gray-600" />
@@ -78,7 +78,7 @@ export default function Navbar() {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-white border-b border-gray-200"
+          className="lg:hidden bg-white border-b border-gray-200"
         >
           <div className="px-4 py-3 space-y-3">
             <Link

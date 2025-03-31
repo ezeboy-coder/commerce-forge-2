@@ -37,7 +37,7 @@ export default function HomePage() {
       {/* Features Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -93,7 +93,7 @@ export default function HomePage() {
             <p className="text-xl text-gray-600 mb-12">
               EnterpriseHub is a leading provider of enterprise solutions, helping businesses transform their operations since 2010. With over a decade of experience, we've helped thousands of companies achieve their digital transformation goals.
             </p>
-            <div className="grid grid-cols-3 gap-8 text-left">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
               <div>
                 <h3 className="text-2xl font-bold text-blue-600 mb-2">1000+</h3>
                 <p className="text-gray-600">Successful Implementations</p>
@@ -124,7 +124,7 @@ export default function HomePage() {
             <p className="text-xl text-gray-600">Stay updated with the latest trends and insights in enterprise solutions</p>
           </motion.div>
 
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
