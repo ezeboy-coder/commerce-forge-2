@@ -24,6 +24,12 @@ export default function Navbar() {
               Solutions
             </Link>
             <Link
+              href="/blog"
+              className="text-gray-600 hover:text-blue-600 transition-colors"
+            >
+              Blog
+            </Link>
+            <Link
               href="/pricing"
               className="text-gray-600 hover:text-blue-600 transition-colors"
             >
@@ -80,6 +86,12 @@ export default function Navbar() {
               className="block text-gray-600 hover:text-blue-600"
             >
               Solutions
+            </Link>
+            <Link
+              href="/blog"
+              className="block text-gray-600 hover:text-blue-600"
+            >
+              Blog
             </Link>
             <Link
               href="/pricing"
